@@ -5,23 +5,25 @@ public class First {
 		nHi("man");
 		nHi("friends");
 
-		double  k = 11;
-		System.out.println("Пл стор кв" + k + "=" +area(k));
+		Square s = new Square();
+		s.k = 11;
+		System.out.println("Пл стор кв" + s.k + "=" +area(s));
 
-		double  s = 6;
-		double r = 4;
-		System.out.println("Пл стор прямоуг " + s +"и"+ r + " = " +area(s,r));
+		Rectangle r = new Rectangle();
+		r.a = 6;
+		r.b = 4;
+		System.out.println("Пл стор прямоуг " + r.a +"и"+ r.b + " = " +area(r));
 	}
 
 	public static void nHi(String somebody) {
 		System.out.println("Hi, " + somebody + "!");
 	}
-	public static double area(double k){
-		 return k*k;
+	public static double area(Square s){
+		 return s.k*s.k;
 	}
 
-	public static double area (double s, double r){
-		return s*r;
+	public static double area (Rectangle r){
+		return r.a*r.b;
 	}
 
 }
