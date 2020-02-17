@@ -5,13 +5,10 @@ public class First {
 		nHi("man");
 		nHi("friends");
 
-		Square s = new Square();
-		s.k = 11;
+		Square s = new Square(11);
 		System.out.println("Пл стор кв" + s.k + "=" +area(s));
 
-		Rectangle r = new Rectangle();
-		r.a = 6;
-		r.b = 4;
+		Rectangle r = new Rectangle(6, 4);
 		System.out.println("Пл стор прямоуг " + r.a +"и"+ r.b + " = " +area(r));
 	}
 
